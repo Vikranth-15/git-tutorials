@@ -16,6 +16,12 @@ class Engineer extends Person{ //derived class
         }
 }
 
+class Teacher extends Person{ //derived class
+    void work(){ //overriding base class method
+            System.out.println("Teacher is teaching students"); //derived class method implementation
+        }
+}
+
 
 public class polymorphism {
     public static void main(String[] args) {
@@ -26,5 +32,8 @@ public class polymorphism {
         p.work(); //calls derived class method
         p=new Engineer(); //base class reference to derived class object
         p.work(); //calls derived class method
+        p=new Teacher(); //base class reference to derived class object
+        p.work(); //calls derived class method
+
     }
 }
